@@ -14,6 +14,9 @@
 			  crossorigin="anonymous"></script>
     <!-- moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
     <title>Harper's Traintime - There's no time like ChooChoo time!
     </title>
 </head>
@@ -60,17 +63,17 @@
                     <form>
                         <div class="form-group">
                             <label for="">Train Service</label>
-                            <input type="text" class="form-control" name="trainNameInput">
+                            <input type="text" class="form-control" id="trainNameInput" name="trainNameInput">
                         </div>
                         <div class="form-group">
                             <label for="">Destination</label>
-                            <input type="text" class="form-control" name="destinationInput">
+                            <input type="text" class="form-control" id="destinationInput" name="destinationInput">
                         </div><div class="form-group">
                             <label for="">First Train Leaves (HH:mm)</label>
-                            <input type="text" class="form-control" name="firstTrainInput">
+                            <input type="text" class="form-control" id="firstTrainInput" name="firstTrainInput">
                         </div><div class="form-group">
                             <label for="">Frequency of Service</label>
-                            <input type="text" class="form-control" name="frequencyInput">
+                            <input type="text" class="form-control" id="frequencyInput" name="frequencyInput">
                         </div>
                             <button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
                     </form>
@@ -79,20 +82,20 @@
             </div>
         </div>
     </div>
-    <script>
+    <!-- <script>
         // Your web app's Firebase configuration
-        var firebaseConfig = {
-          apiKey: "AIzaSyAUI49FUBOUSVS92fP-aD8PFRFRVJ6V-PU",
-          authDomain: "choochoo-68bea.firebaseapp.com",
-          databaseURL: "https://choochoo-68bea.firebaseio.com",
-          projectId: "choochoo-68bea",
-          storageBucket: "",
-          messagingSenderId: "365620856132",
-          appId: "1:365620856132:web:4b038c775a4c2e0671c311"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-      </script>
+        // var firebaseConfig = {
+        //   apiKey: "AIzaSyAUI49FUBOUSVS92fP-aD8PFRFRVJ6V-PU",
+        //   authDomain: "choochoo-68bea.firebaseapp.com",
+        //   databaseURL: "https://choochoo-68bea.firebaseio.com",
+        //   projectId: "choochoo-68bea",
+        //   storageBucket: "",
+        //   messagingSenderId: "365620856132",
+        //   appId: "1:365620856132:web:4b038c775a4c2e0671c311"
+        // };
+        // // Initialize Firebase
+        // firebase.initializeApp(firebaseConfig);
+      </script> -->
       <script src="assets/trainScript.js"></script>
 </body>
 </html>
